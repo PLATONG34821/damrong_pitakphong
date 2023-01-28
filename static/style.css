@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Yeseva+One&display=swap");
+
+body {
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    min-height: 100vh;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgba(208, 123, 81, 1);
+    background: -moz-linear-gradient(90deg, rgba(61, 70, 92, 1) 15%, rgba(208, 123, 81, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(61, 70, 92, 1) 15%, rgba(208, 123, 81, 1) 100%);
+    background: linear-gradient(90deg, rgba(61, 70, 92, 1) 15%, rgba(208, 123, 81, 1) 100%);
+}
+
+* {
+    scroll-behavior: smooth;
+    /* If you want to implement it in very old browser-versions */
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+
+    /* The rule below is not implemented in browsers yet */
+    -o-user-select: none;
+
+    /* The rule below is implemented in most browsers by now */
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgba(208, 123, 81, 1);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(208, 123, 81, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: hsla(233, 21%, 24%, 0.5);
+}
