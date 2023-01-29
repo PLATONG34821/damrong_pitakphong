@@ -7,7 +7,9 @@
   import { Turnstile } from 'svelte-turnstile';
 </script>
 
+<div class="hide">
 <Turnstile siteKey="0x4AAAAAAABzM8RBMKZycgnJ" retry="auto" />
+</div>
 <div class="container">
   <Home />
   <div class="menu">
@@ -53,6 +55,9 @@
 </svg>
 
 <style>
+  .hide {
+    display: none;
+  }
   .menu {
         margin-top: 7.5vh;
         margin-bottom: 10vh;
