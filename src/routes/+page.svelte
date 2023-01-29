@@ -106,7 +106,7 @@
     }
 
     .menu > a:hover {
-        transform: translateY(-3px);
+        transform: translateY(-5px);
     }
   .top {
       --offset: 50px;

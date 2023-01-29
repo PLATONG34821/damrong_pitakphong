@@ -18,25 +18,28 @@
         /** @type {string} */ issue,
         /** @type {any} */ realname
     ) => {
-        if (realname == "") {
-            let realname = "ไม่ต้องการระบุชื่อ";
-            try {
-                const { data, error } = await supabase
-                    .from("issue")
-                    .insert([{ issue: issue, realname: realname }]);
-            } catch (err) {
-                console.log(err);
-            }
-        } else {
-            try {
-                const { data, error } = await supabase
-                    .from("issue")
-                    .insert([{ issue: issue, realname: realname }]);
-            } catch (err) {
-                console.log(err);
+        if (issue != "") {
+            if (realname == "") {
+                let realname = "ไม่ต้องการระบุชื่อ";
+                try {
+                    const { data, error } = await supabase
+                        .from("issue")
+                        .insert([{ issue: issue, realname: realname }]);
+                    await getIssue();
+                } catch (err) {
+                    console.log(err);
+                }
+            } else {
+                try {
+                    const { data, error } = await supabase
+                        .from("issue")
+                        .insert([{ issue: issue, realname: realname }]);
+                } catch (err) {
+                    console.log(err);
+                }
+                await getIssue();
             }
         }
-        await getIssue();
     };
 
     onMount(async () => {
@@ -68,16 +71,16 @@
         >
     </div>
     <div class="show-issue" id="show-issue">
-            <Marquee pauseOnHover={true} speed={200} {play}>
-                {#each issues as issue}
-                    <div class="issue-box">
-                        <h3>{issue.realname}</h3>
-                        <p>{issue.issue}</p>
-                    </div>
-                {:else}
-                    <p />
-                {/each}
-            </Marquee>
+        <Marquee pauseOnHover={true} speed={200} {play}>
+            {#each issues as issue}
+                <div class="issue-box">
+                    <h3>{issue.realname}</h3>
+                    <p>{issue.issue}</p>
+                </div>
+            {:else}
+                <p />
+            {/each}
+        </Marquee>
     </div>
 </div>
 
@@ -98,7 +101,6 @@
         transition: transform 200ms, background 200ms;
         background: #fff;
         color: #31344b;
-        box-shadow: 0 0 0 3px #31344b inset;
     }
 
     .add-issue > input::placeholder {
@@ -123,6 +125,10 @@
         background: transparent;
         color: #fff;
         box-shadow: 0 0 0 3px #fff inset;
+    }
+
+    .add-issue > button:hover {
+        transform: translateY(-5px);
     }
 
     .issue > h1 {
