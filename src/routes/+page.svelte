@@ -4,11 +4,9 @@
   import Home from "$lib/home.svelte";
   import Policy from "$lib/policy.svelte";
   import Vision from "$lib/vision.svelte";
-  import { Turnstile } from 'svelte-turnstile';
 </script>
 
 <div class="container">
-  <Turnstile siteKey="0x4AAAAAAABzM8RBMKZycgnJ" />
   <Home />
   <div class="menu">
     <a href="#vision">วิสัยทัศน์พรรค</a>
