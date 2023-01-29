@@ -74,7 +74,7 @@
         >
     </div>
     <div class="show-issue" id="show-issue">
-        <Marquee pauseOnHover={true} speed={200} {play}>
+        <Marquee pauseOnClick={true} speed={200} {play}>
             {#each issues as issue}
                 <div class="issue-box">
                     <h3>{issue.realname}</h3>
@@ -189,6 +189,13 @@
         max-width: 30vmax;
         margin: 1.5vh;
         border-radius: 2.5vh;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+
+    .issue-box:active {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
     }
 
     .issue-box > h3 {

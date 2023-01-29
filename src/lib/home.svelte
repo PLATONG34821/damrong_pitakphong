@@ -36,7 +36,7 @@
         margin-bottom: 5vh;
     }
 
-    .home {
+    .home { 
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -74,27 +74,23 @@
         width: 50vmin;
     }
 
-    .home > .sub-title > span,
-    .home > .title > span,
-    .home > .logo > svg {
+    * {
         filter: blur(3px);
     }
 
-    .home > .sub-title > span:nth-child(1),
-    .home > .title > span,
-    .home > .logo > svg {
+    *:nth-child(1) {
         animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
     }
 
-    .home > .sub-title > span:nth-child(2) {
+    *:nth-child(2) {
         animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
     }
 
-    .home > .sub-title > span:nth-child(3) {
+    *:nth-child(3) {
         animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
     }
 
-    .home > .sub-title > span:nth-child(4) {
+    *:nth-child(4) {
         animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
     }
 
