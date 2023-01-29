@@ -4,8 +4,10 @@
   import Home from "$lib/home.svelte";
   import Policy from "$lib/policy.svelte";
   import Vision from "$lib/vision.svelte";
+  import { Turnstile } from 'svelte-turnstile';
 </script>
 
+<Turnstile siteKey="0x4AAAAAAABzM8RBMKZycgnJ" retry="auto" />
 <div class="container">
   <Home />
   <div class="menu">
