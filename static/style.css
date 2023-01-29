@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 html {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     min-height: 100vh;
@@ -32,19 +36,4 @@ html {
     /* The rule below is implemented in most browsers by now */
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-    background-color: rgba(208, 123, 81, 1);
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: rgba(208, 123, 81, 1);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: hsla(233, 21%, 24%, 0.5);
 }
