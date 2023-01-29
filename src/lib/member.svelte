@@ -4,7 +4,9 @@
 </script>
 
 <section id="member">
-    <h2>สมาชิกพรรค</h2>
+    <a href="#member">
+        <h2>สมาชิกพรรค</h2>
+    </a>
     <div class="member-list">
         <div class="member-box">
             <div class="member-img">
@@ -130,6 +132,14 @@
 </section>
 
 <style>
+    #member > a {
+        text-decoration: none;
+        transition: all 200ms;
+    }
+    #member > a:hover {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
     #member {
         display: flex;
         justify-content: center;
@@ -137,7 +147,7 @@
         flex-direction: column;
         font-family: "Chonburi", cursive;
     }
-    #member > h2 {
+    #member > a > h2 {
         margin: 5vh;
         color: #31344b;
         font-size: 10vmin;
@@ -153,10 +163,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        min-width: 225px;
-        max-width: 225px;
-        height: 175px;
+        min-width: 12.5vmax;
+        max-width: 12.5vmax;
+        min-height: 12.5vmax;
+        max-height: 12.5vmax;
         margin: 10px;
         margin-inline: 25px;
         padding: 10px;
@@ -168,8 +178,8 @@
 
     .member-img > img {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 10vmax;
+        height: 10vmax;
         object-fit: cover;
         object-position: center;
     }

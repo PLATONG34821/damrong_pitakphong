@@ -13,7 +13,7 @@
             fill="#fff"
         />
     </svg>
-    <h2>วิสัยทัศน์พรรค</h2>
+    <a href="#vision"><h2>วิสัยทัศน์พรรค</h2></a>
     <span
         >เบอร์ 4 พูดจริง ทำจริง และจะทำสุดความสามารถเพราะเบอร์4
         พร้อมที่จะใช้ศักยภาพของทุกคนในพรรคในการแก้ไขปัญหาตามนโยบายที่กล่าวไว้
@@ -22,6 +22,14 @@
 </section>
 
 <style>
+    #vision > a {
+        text-decoration: none;
+        transition: all 200ms;
+    }
+    #vision > a:hover {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
     #vision {
         font-family: "Chonburi", cursive;
         display: flex;
@@ -32,7 +40,7 @@
         margin-bottom: 30vmin;
     }
 
-    #vision > h2 {
+    #vision > a > h2 {
         margin-top: 20vh;
         color: #31344b;
         font-size: 10vmin;

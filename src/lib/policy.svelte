@@ -1,5 +1,7 @@
 <section id="policy">
-    <h2>นโยบายพรรค</h2>
+    <a href="#policy">
+        <h2>นโยบายพรรค</h2>
+    </a>
     <div class="policy-list">
         <div class="policy">
             <h3>มีการจัดประกวดดาวเดือน</h3>
@@ -54,7 +56,15 @@
         font-family: "Chonburi", cursive;
         margin-bottom: 20vmin;
     }
-    #policy > h2 {
+    #policy > a {
+        text-decoration: none;
+        transition: all 200ms;
+    }
+    #policy > a:hover {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
+    #policy > a > h2 {
         color: #31344b;
         font-size: 10vmin;
     }

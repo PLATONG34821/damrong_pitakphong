@@ -25,7 +25,6 @@
                     const { data, error } = await supabase
                         .from("issue")
                         .insert([{ issue: issue, realname: realname }]);
-                    await getIssue();
                 } catch (err) {
                     console.log(err);
                 }
@@ -37,8 +36,10 @@
                 } catch (err) {
                     console.log(err);
                 }
-                await getIssue();
             }
+            await getIssue();
+        } else {
+            alert("จำเป็นต้องกรอกปัญหา!");
         }
     };
 
@@ -58,7 +59,9 @@
 </script>
 
 <div class="issue" id="report">
-    <h1>แจ้งปัญหา</h1>
+    <a href="#report">
+        <h2>แจ้งปัญหา</h2>
+    </a>
     <div class="add-issue">
         <input
             placeholder="ชื่อ-นามสกุล (ไม่จำเป็น)"
@@ -85,6 +88,14 @@
 </div>
 
 <style>
+    #report > a {
+        text-decoration: none;
+        transition: all 200ms;
+    }
+    #report > a:hover {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
     .add-issue > input {
         width: 30vh;
         font-family: "Chonburi", cursive;
@@ -121,7 +132,7 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 1;
-        transition: transform 200ms, background 200ms;
+        transition: transform 200ms;
         background: transparent;
         color: #fff;
         box-shadow: 0 0 0 3px #fff inset;
@@ -131,7 +142,7 @@
         transform: translateY(-5px);
     }
 
-    .issue > h1 {
+    .issue > a > h2 {
         font-size: 10vmin;
         color: #31344b;
     }
