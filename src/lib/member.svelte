@@ -133,6 +133,7 @@
 
 <style>
     #member > a {
+        cursor: alias;
         text-decoration: none;
         transition: all 200ms;
     }

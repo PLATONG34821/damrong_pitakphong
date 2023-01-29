@@ -93,6 +93,7 @@
         transition: all 200ms;
     }
     #report > a:hover {
+        cursor: alias;
         transform: translateY(-5px);
         opacity: 0.8;
     }

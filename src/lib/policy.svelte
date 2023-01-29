@@ -57,6 +57,7 @@
         margin-bottom: 20vmin;
     }
     #policy > a {
+        cursor: alias;
         text-decoration: none;
         transition: all 200ms;
     }
