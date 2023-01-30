@@ -122,7 +122,7 @@
         </div>
         <div class="member-box">
             <div class="member-img">
-                <img src="member-img/TOPTAP.jpg" alt="TAM" />
+                <img src="member-img/TOPTAP.jpeg" alt="TOPTAP" />
             </div>
             <div class="member-name">
                 <h2>TOPTAP</h2>
