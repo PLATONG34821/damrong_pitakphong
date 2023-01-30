@@ -29,7 +29,7 @@
                 <img src="member-img/BELL.jpeg" alt="BELL" />
             </div>
             <div class="member-name">
-                <h2>BELL</h2>
+                <h2>MILD</h2>
             </div>
         </div>
         <div class="member-box">
@@ -77,7 +77,7 @@
                 <img src="member-img/MILD.jpeg" alt="MILD" />
             </div>
             <div class="member-name">
-                <h2>MILD</h2>
+                <h2>BELL</h2>
             </div>
         </div>
         <div class="member-box">
@@ -122,10 +122,10 @@
         </div>
         <div class="member-box">
             <div class="member-img">
-                <img src="member-img/TAM.jpg" alt="TAM" />
+                <img src="member-img/TOPTAP.jpg" alt="TAM" />
             </div>
             <div class="member-name">
-                <h2>TAM</h2>
+                <h2>TOPTAP</h2>
             </div>
         </div>
     </div>
