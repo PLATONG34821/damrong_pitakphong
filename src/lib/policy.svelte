@@ -61,7 +61,7 @@
         text-decoration: none;
         transition: all 200ms;
     }
-    #policy > a:hover {
+    #policy > a:active {
         transform: translateY(-5px);
         opacity: 0.8;
     }

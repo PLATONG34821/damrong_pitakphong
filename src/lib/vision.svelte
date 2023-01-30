@@ -26,7 +26,7 @@
         text-decoration: none;
         transition: all 200ms;
     }
-    #vision > a:hover {
+    #vision > a:active {
         cursor: alias;
         transform: translateY(-5px);
         opacity: 0.8;

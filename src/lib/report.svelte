@@ -92,7 +92,7 @@
         text-decoration: none;
         transition: all 200ms;
     }
-    #report > a:hover {
+    #report > a:active {
         cursor: alias;
         transform: translateY(-5px);
         opacity: 0.8;
@@ -139,7 +139,7 @@
         box-shadow: 0 0 0 3px #fff inset;
     }
 
-    .add-issue > button:hover {
+    .add-issue > button:active {
         transform: translateY(-5px);
     }
 

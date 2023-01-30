@@ -88,7 +88,7 @@
     transition: transform 200ms, background 200ms;
   }
 
-  .menu > a:hover {
+  .menu > a:active {
     transform: translateY(-5px);
   }
 </style>

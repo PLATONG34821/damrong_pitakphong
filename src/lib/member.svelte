@@ -137,7 +137,7 @@
         text-decoration: none;
         transition: all 200ms;
     }
-    #member > a:hover {
+    #member > a:active {
         transform: translateY(-5px);
         opacity: 0.8;
     }
