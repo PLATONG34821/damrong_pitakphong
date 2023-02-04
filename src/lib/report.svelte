@@ -74,7 +74,7 @@
         >
     </div>
     <div class="show-issue" id="show-issue">
-        <Marquee pauseOnClick={true} speed={200} {play}>
+        <Marquee pauseOnClick={true} speed={100} {play}>
             {#each issues as issue}
                 <div class="issue-box">
                     <h3>{issue.realname}</h3>
