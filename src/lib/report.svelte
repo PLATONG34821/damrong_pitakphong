@@ -144,6 +144,7 @@
     }
 
     .issue > a > h2 {
+        margin-top: 20vmin;
         font-size: 10vmin;
         color: #04064a;
     }
