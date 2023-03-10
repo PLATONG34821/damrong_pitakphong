@@ -21,7 +21,7 @@
     }
 
     .logo > img {
-        height: 35vmax;
+        height: 25vmax;
     }
 
     .home { 
