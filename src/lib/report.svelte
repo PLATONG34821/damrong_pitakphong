@@ -112,15 +112,15 @@
         line-height: 1;
         transition: transform 200ms, background 200ms;
         background: #fff;
-        color: #31344b;
+        color: #04064a;
     }
 
     .add-issue > input::placeholder {
-        color: #31344b;
+        color: #04064a;
     }
 
     .add-issue > button {
-        width: 17vh;
+        width: 20vh;
         font-family: "Chonburi", cursive;
         margin: 0.75vh;
         text-decoration: none;
@@ -144,8 +144,9 @@
     }
 
     .issue > a > h2 {
+        margin-top: 20vmin;
         font-size: 10vmin;
-        color: #31344b;
+        color: #04064a;
     }
 
     .show-issue {
@@ -171,7 +172,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #31344b;
+        background-color: #04064a;
         width: fit-content;
         margin-bottom: 1.5vh;
         border-radius: 2.5vh;
@@ -184,7 +185,7 @@
         display: flex;
         flex-wrap: none;
         flex-direction: column;
-        background-color: #31344b;
+        background-color: #04064a;
         width: fit-content;
         max-width: 30vmax;
         margin: 1.5vh;

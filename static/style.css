@@ -8,11 +8,8 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: hsla(223, 52%, 64%, 1);
-    background: linear-gradient(90deg, hsla(223, 52%, 64%, 1) 0%, hsla(20, 74%, 53%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(223, 52%, 64%, 1) 0%, hsla(20, 74%, 53%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(223, 52%, 64%, 1) 0%, hsla(20, 74%, 53%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#748FD3", endColorstr="#E06B30", GradientType=1);
+    background: rgb(4,6,74);
+    background: linear-gradient(180deg, rgba(4,6,74,1) 0%, rgba(129,133,241,1) 100%);
 }
 
 
