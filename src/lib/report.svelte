@@ -120,7 +120,7 @@
     }
 
     .add-issue > button {
-        width: 17vh;
+        width: 20vh;
         font-family: "Chonburi", cursive;
         margin: 0.75vh;
         text-decoration: none;
